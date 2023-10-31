@@ -10,6 +10,14 @@ def encode(password):
     return "".join(encodedPass)
 
 
+#decode method, subtracts 3 from password- Brianna Chua
+def decode(password):
+    new_password = ''
+    for i in password:
+        new_password = new_password + str(int(i) - 3)
+    return new_password
+
+
 def main():
     while True:
         print("Menu \n-------------")
